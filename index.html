@@ -219,12 +219,12 @@
         document.addEventListener('visibilitychange', function () {
             if (document.hidden) {
                 // $('[rel="icon"]').attr('href', "/funny.ico");
-                document.title = 'Hi! Welcome to my personal blog~';
+                document.title = 'Greeting from Yiqun';
                 clearTimeout(titleTime);
             }
             else {
                 $('[rel="icon"]').attr('href', "/favicon.ico");
-                document.title = 'Greeting from Yiqun' + OriginTitle;
+                document.title = 'Greeting from Yiqun' ;
                 titleTime = setTimeout(function () {
                     document.title = OriginTitle;
                 }, 2000);
